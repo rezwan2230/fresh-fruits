@@ -20,6 +20,8 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
     <style>
         .font-basic {
             font-family: 'Lato';
@@ -46,36 +48,52 @@
 <body class=".font-basic">
 
     <header>
-        <!-- Navbar Section -->
-        <nav class="container mx-auto rounded-full bg-[#F85559] mt-10 mb-10 h-20">
-            <div class="navbar ">
-                <div class="">
-                    <div class="dropdown md:hidden">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
+
+        <nav class="container mx-auto ">
+
+            <div class="navbar bg-[#F85559] my-3 md:my-8 md:h-20 px-4 lg:px-10 rounded-full flex justify-around">
+                <div class="navbar-start flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
+                                    d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Homepage</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
                         </ul>
                     </div>
+                    <div class="gap-8 text-xl text-white hidden lg:block lg:flex">
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Shop</a>
+                        <a href="">All Fruits</a>
+                    </div>
                 </div>
-                <div class="sm:hidden">
-                    <ul class="flex gap-10  ">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">All Fruits</a></li>
+
+                <div class="navbar-center md:flex lg:flex flex-1 justify-end lg:justify-center lg:items-center mr-5 lg:mr-0 ">
+                    <ul class="flex gap-3 justify-center items-center">
+                        <img class="h-[36px] md:h-[50px]" src="./images/logo.png" alt="">
+                        <span>
+                            <p class="text-2xl md:text-3xl font-semibold text-white">Fruit Burst</p>
+                        </span>
                     </ul>
                 </div>
-                <div></div>
-                <div></div>
+
+                <div class="right-0-1 justify-end flex-1 p-5  hidden lg:block lg:flex">
+                    <div class="flex justify-end bg-white py-3 pr-5 rounded-full w-56 items-center">
+                        <input class="w-40" type="text" name="" id="" placeholder="Search here">
+                        <img class="w-5" src="./images/search.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
         </nav>
 
 
@@ -220,7 +238,8 @@
                 </div>
 
                 <!-- Timer-->
-                <div class="grid grid-flow-col gap-2 md:gap-6 md:my-10 lg:my-0 md:ml-28 text-center auto-cols-max px-10 md:px-0">
+                <div
+                    class="grid grid-flow-col gap-2 md:gap-6 md:my-10 lg:my-0 md:ml-28 text-center auto-cols-max px-10 md:px-0">
                     <div class="flex flex-col gap-1 ">
                         <span
                             class="countdown font-mono text-3xl md:text-5xl font-bold text-black flex items-center md:justify-between gap-6">
@@ -261,7 +280,7 @@
 
                 <!-- Card One -->
                 <div
-                    class="p-5 border border-black mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
+                    class="p-5 border border-[#12121253] mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
                     <img class="mx-auto pt-5" src="./images/fruit6.png" alt="">
                     <p class="text-lg pt-4 font-extrabold">12.90$ - 18.85$</p>
                     <hr class="mx-5">
@@ -301,7 +320,7 @@
 
                 <!-- Card Two -->
                 <div
-                    class="p-5 border border-black mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
+                    class="p-5 border border-[#12121253] mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
                     <img class="mx-auto pt-5" src="./images/fruit7.png" alt="">
                     <p class="text-lg pt-4 font-extrabold">12.90$ - 18.85$</p>
                     <hr class="mx-5">
@@ -341,7 +360,7 @@
 
                 <!-- Card Three -->
                 <div
-                    class="p-5 border border-black mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
+                    class="p-5 border border-[#12121253] mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
                     <img class="mx-auto pt-5" src="./images/fruit8.png" alt="">
                     <p class="text-lg pt-4 font-extrabold">12.90$ - 18.85$</p>
                     <hr class="mx-5">
@@ -381,7 +400,7 @@
 
                 <!-- Card Four -->
                 <div
-                    class="p-5 border border-black mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
+                    class="p-5 border border-[#12121253] mx-10 md:mx-0 w-auto md:w-80 text-center space-y-4 rounded-md mb-6 md:mb-0">
                     <img class="mx-auto pt-5" src="./images/fruit9.png" alt="">
                     <p class="text-lg pt-4 font-extrabold">12.90$ - 18.85$</p>
                     <hr class="mx-5">
@@ -419,19 +438,11 @@
                     </dialog>
                 </div>
             </div>
-
             <div class="flex justify-center md:pt-16">
                 <button class="btn flex justify-center bg-[#F85559] text-white hover:bg-[#F85559] border-0 px-10">Shop
                     All</button>
             </div>
-
-
         </section>
-
-
-
-
-
 
 
 
@@ -501,20 +512,16 @@
         <!-- Why Choose Us -->
 
         <section class="container mx-auto mt-8 md:mt-24">
-
             <h1 class="text-4xl text-center font-bold mb-6">Why Choose Us</h1>
             <p class="text-center text-xl w-auto px-8">Contrary to popular belief, is not simply random text. It has
                 roots in a
                 piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-
             <div class="md:flex  mt-12">
-
 
                 <!-- Container One -->
                 <div class="flex-1 md:order-2">
                     <img class="w-auto mx-auto px-7 md:px-0" src="./images/whychoose1.png" alt="">
                 </div>
-
 
                 <!-- Container Two -->
                 <div class="flex-1 md:order-1">
@@ -541,7 +548,6 @@
                         </div>
                     </div>
 
-
                     <div
                         class="flex flex-col md:flex-row gap-5 pr-10 mt-5 md:mt-0  justify-center items-center md:items-start">
                         <div class="relative top-2">
@@ -564,7 +570,6 @@
                                 amazing and fresh fruits.</p>
                         </div>
                     </div>
-
 
                     <div
                         class="flex flex-col md:flex-row gap-5 pr-10 mt-5 md:mt-0  justify-center items-center md:items-start">
@@ -629,7 +634,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <!-- Container Three -->
                 <div class="flex-1 md:order-3">
@@ -755,16 +759,8 @@
                     </div>
                 </div>
             </div>
-
-
-
         </section>
-
-
-
-
     </main>
-
 
 
 
